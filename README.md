@@ -20,4 +20,3 @@ $('main').fromTop(56,function(){
 	})
 ```
 
-(@jasper)[http://stackoverflow.com/users/752738/jasper]
