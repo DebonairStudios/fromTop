@@ -1,5 +1,5 @@
 //fromTop() Version 1.0 jQuery function. 
-$(document).ready(function(){
+jQuery(function ($) {
 $.fn.fromTop = function(fromTop, CF){
 	var windowTop  = $(window).scrollTop(), 
 	targetTop = $(this).offset().top, 
@@ -12,4 +12,4 @@ $.fn.fromTop = function(fromTop, CF){
 	CF();
 	return this;
 	}
-})(jQuery)
+});
