@@ -1,2 +1,2 @@
 //fromTop() Version 1.0 jQuery function. 
-$(document).ready(function(){$.fn.fromTop=function(b,c){var a=$(window).scrollTop(),a=$(this).offset().top-a;window.scrollActivated=!1;window.scrollActivated=a<=b?!0:!1;c();return this}})(jQuery);
+jQuery(function(a){a.fn.fromTop=function(c,d){var b=a(window).scrollTop(),b=a(this).offset().top-b;window.scrollActivated=!1;window.scrollActivated=b<=c?!0:!1;d();return this}});
