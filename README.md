@@ -14,9 +14,9 @@ To use the `scrollActive` variable:
 ```
 $('main').fromTop(56,function(){
 		if(scrollActivated==true) $('nav').addClass("navdark"); 
-		//Adds class when the element is 56px or less from the top of the window
+		//Adds class when main is 56px or less from the top of the window
 		else $('nav').removeClass("navdark");
-		//Removes class when the element is more then 56px from the top of the window
+		//Removes class when main is more then 56px from the top of the window
 	})
 ```
 
