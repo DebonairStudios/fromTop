@@ -1,15 +1,10 @@
 //fromTop() Version 1.0 jQuery function. 
-jQuery(function ($) {
-$.fn.fromTop = function(fromTop, CF){
-	var windowTop  = $(window).scrollTop(), 
-	targetTop = $(this).offset().top, 
-	distance = (targetTop - windowTop);
-	window.scrollActivated = false;
-	if(distance <= fromTop){
-	window.scrollActivated=true;
-	}
-	else window.scrollActivated=false;
-	CF();
-	return this;
-	}
+jQuery(function(a) {
+  a.fn.fromTop = function(c, d) {
+    var b = a(window).scrollTop(), b = a(this).offset().top - b;
+    window.scrollActivated = !1;
+    window.scrollActivated = b <= c ? !0 : !1;
+    d();
+    return this;
+  };
 });
