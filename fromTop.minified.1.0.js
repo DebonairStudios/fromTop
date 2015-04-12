@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 //fromTop() Version 1.0 jQuery function. 
 jQuery(function(b){b.fn.fromTop=function(a){var c=b(window).scrollTop(),c=b(this).offset().top-c;window.enterViewpane;a.start||(console.warn('fromTop() WARNING: A height from top to fire function should be specified with the "start" configuration. Default has been set to 0'),a.start=0);c<=a.start?(a.inside&&a.inside(),a.enter&&!0!==window.enterViewpane&&(window.enterViewpane=!0,a.enter(),a.log&&1==a.log&&console.log("fromTop() Enter: Element has entered the viewpane.")),a.log&&1==a.log&&console.log("fromTop() TRUE: Is within "+
 a.start+"px from top of window")):(a.outside&&a.outside(),a.exit&&1==window.enterViewpane&&(a.exit(),window.enterViewpane=!1,a.log&&1==a.log&&console.log("fromTop() Exit: Element has exited the viewpane.")),a.log&&1==a.log&&console.log("fromTop() FALSE: Is over "+a.start+"px from top of window"));return this}});
-=======
-//fromTop() Version 1.1 jQuery function. 
-jQuery(function(b){b.fn.fromTop=function(a){var c=b(window).scrollTop(),c=b(this).offset().top-c;window.enterViewpane;a.start||(console.warn('fromTop() WARNING: A height from top to fire function should be specified with the "start" configuration. Default has been set to 0'),a.start=0);c<=a.start?(a.inside&&a.inside(),a.enter&&!0!==window.enterViewpane&&(window.enterViewpane=!0,a.enter(),a.log&&1==a.log&&console.log("fromTop() Enter: Element has entered the viewpane.")),a.log&&1==a.log&&console.log("fromTop() TRUE: Is within "+
-a.start+"px from top of window")):(a.outside&&a.outside(),a.exit&&1==window.enterViewpane&&(a.exit(),window.enterViewpane=!1,a.log&&1==a.log&&console.log("fromTop() Exit: Element has exited the viewpane.")),a.log&&1==a.log&&console.log("fromTop() FALSE: Is over "+a.start+"px from top of window"));return this}});
->>>>>>> origin/master
