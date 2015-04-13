@@ -4,7 +4,7 @@ Use the function and its configurations like so:
 ```javascript
 $(window).scroll(function(){
 $('main').fromTop({
-		start:56, //Sets the height from the windows top where the function is called
+		start:100, //Sets the height from the windows top where the inside function is called
 		log:true, //Sets the log configuration. Used for debugging, it prints the elements position status into the console
 		inside:function(){ //This function runs whenever fromTop() is called and the target element is inside the "start" area
 			$('nav').addClass("navdark");
