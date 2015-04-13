@@ -1,4 +1,6 @@
-//fromTop() Version 1.1.1 jQuery function. 
+//fromTop() Version 1.1.1 jQuery function. Made with love by Debonair Studios :D http://debonairstudios.com
+//Documentation, examples, and randomness can be found at http://dev.debonairstudios.com/fromtop.js
+//fromTop().js Copyright (c) Jacob Gray
 jQuery(function ($) {
 	function log(data){
 		 console.log(data);
@@ -22,7 +24,7 @@ jQuery(function ($) {
 				config.enter();
 				if(config.log) if(config.log==true) log("fromTop() Enter: Element has entered the viewpane.");
 			}
-			if(config.log) if(config.log==true) log("fromTop() TRUE: Is  "+distance+"px from top of window");
+			if(config.log) if(config.log==true) log("fromTop() TRUE: Is "+distance+"px from top of window");
 		}
 		else{
 			if(config.outside) config.outside();
