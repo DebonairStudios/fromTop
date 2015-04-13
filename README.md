@@ -1,7 +1,7 @@
 # fromTop().js
 A simple jquery function to run a function when the selected element is scrolled into the page.     
 Use the function and its configurations like so:
-```
+```javascript
 $(window).scroll(function(){
 $('main').fromTop({
 		start:56, //Sets the height from the windows top where the function is called
