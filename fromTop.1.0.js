@@ -17,6 +17,9 @@ jQuery(function ($) {
 			console.warn("fromTop() WARNING: A height from top to fire function should be specified with the \"start\" configuration. Default has been set to 0");
 			config.start=0;
 		}
+		if(config.start<=config.end){
+			console.error("fromTop() ERROR: The config.end method CANNOT be more then the config.start method!");
+		}
 		if(distance <= config.start && distance >= end){
 			if(config.inside) config.inside();
 			if(config.enter && window.enterViewpane !==true){
