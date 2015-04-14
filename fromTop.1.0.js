@@ -19,6 +19,7 @@ jQuery(function ($) {
 		}
 		if(config.start<=config.end){
 			console.error("fromTop() ERROR: The config.end method CANNOT be more then the config.start method!");
+			return false;
 		}
 		if(distance <= config.start && distance >= end){
 			if(config.inside) config.inside();
