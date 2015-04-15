@@ -22,4 +22,4 @@ $('main').fromTop({
 	});
 });
 ```
-
+http://dev.debonairstudios.com/fromTop/
