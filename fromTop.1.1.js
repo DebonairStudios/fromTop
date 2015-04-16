@@ -1,4 +1,4 @@
-//fromTop() Version 1.1.1 jQuery function. Made with ❤ by Debonair Studios :D http://debonairstudios.com
+//fromTop() Version 1.1.1 jQuery function. Made with love by Debonair Studios :D http://debonairstudios.com
 //Documentation, examples, and randomness can be found at http://dev.debonairstudios.com/fromTop/
 //fromTop().js Copyright (c) Jacob Gray
 jQuery(function ($) {
