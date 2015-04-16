@@ -9,7 +9,7 @@ jQuery(function ($) {
 		var windowTop  = $(window).scrollTop(), 
 		targetTop = $(this).offset().top, 
 		distance = (targetTop - windowTop),
-		end = config.end || 0;
+		end = config.end || -9*9*9*9;
 		window.enterViewpane;
 		if(!config.start){
 			console.warn("fromTop() WARNING: A height from top to fire function should be specified with the \"start\" configuration. Default has been set to 0");
