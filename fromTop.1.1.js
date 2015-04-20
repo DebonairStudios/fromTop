@@ -9,8 +9,7 @@ jQuery(function ($) {
 		var windowTop  = $(window).scrollTop(), 
 		targetTop = $(this).offset().top, 
 		distance = (targetTop - windowTop),
-		end = config.end || -9*9*9*9*9*9;
-		window.enterViewpane;
+		end = config.end || -9*9*9*9*9*9,
 		if(!config.start){
 			console.warn("fromTop() WARNING: A height from top to fire function should be specified with the \"start\" configuration. Default has been set to 0");
 			config.start=0;
@@ -21,8 +20,7 @@ jQuery(function ($) {
 		}
 		if(distance <= config.start && distance >= end){
 			if(config.inside) config.inside(this);
-			if(config.enter && window.enterViewpane !==true){
-				window.enterViewpane=true;
+			if(config.enter && currentwin !==true){
 				config.enter(this);
 				if(config.log && config.log===true) log("fromTop() Enter: Element has entered the viewpane.");
 			}
@@ -30,9 +28,8 @@ jQuery(function ($) {
 		}
 		else{
 			if(config.outside) config.outside(this);
-			if(config.exit && window.enterViewpane===true){
+			if(config.exit && currentwin===true){
 				config.exit(this);
-				window.enterViewpane=false;
 				if(config.log) if(config.log===true) log("fromTop() Exit: Element has exited the viewpane.");
 			}
 			if(config.log) if(config.log===true) log("fromTop() FALSE: Is "+distance+"px from top of window");
