@@ -22,4 +22,11 @@ $('main').fromTop({
 	});
 });
 ```
+NOTE: if you want to target the element you are using fromTop on(usually called 'this'), you have to place a variable name in the function parentheses that is not 'this' for example (element):
+```
+inside:function(element){
+$(element).css('background','red');
+}
+```
+
 http://dev.debonairstudios.com/fromTop/
